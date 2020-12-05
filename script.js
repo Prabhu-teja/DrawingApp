@@ -6,6 +6,9 @@ let toDraw=true;
 let bgColor="#ffffff";
 let textColor="#000000";
 let toWrite=false;
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
 document.getElementById("bgColorPicker").value=bgColor;
 document.getElementById("textColorPicker").value=textColor;
 function updateSize(tempSize){
